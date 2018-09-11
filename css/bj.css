@@ -1,0 +1,193 @@
+@charset utf-8;
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (min-width: 718px) and (max-width: 1050px) {
+  header {
+    width: 700px;
+  }
+  header .bottom ul.left {
+    width: 35%;
+  }
+  header .bottom ul.left li a {
+    font-size: 13px;
+  }
+  header .bottom ul.right {
+    width: 35%;
+  }
+  header .bottom ul.right li a {
+    font-size: 13px;
+  }
+  main {
+    width: 659px;
+  }
+  main h2 {
+    font-size: 40px;
+  }
+  main div.next ul li div.img-overlay {
+    width: 201px;
+    height: 227px;
+  }
+  main div.next ul li div.img-overlay p {
+    margin-top: 115px;
+  }
+  main div.next ul li h3 {
+    font-size: 25px;
+  }
+  footer {
+    width: 700px;
+    height: 570px;
+  }
+  footer div.top {
+    height: 570px;
+  }
+}
+@media screen and (min-width: 364px) and (max-width: 718px) {
+  header {
+    width: 96%;
+    height: 134px;
+  }
+  header .top div {
+    display: none;
+  }
+  header .top ul {
+    margin: 0 auto;
+    float: none;
+    width: 212px;
+  }
+  header .bottom {
+    top: 19px;
+  }
+  header .bottom img {
+    left: 30%;
+  }
+  header .bottom ul.left {
+    display: none;
+  }
+  header .bottom ul.right {
+    display: none;
+  }
+  header .bottom div.select {
+    display: block;
+  }
+  header .bottom div.select ul {
+    margin-left: -35px;
+  }
+  main {
+    width: 92%;
+    height: 2600px;
+  }
+  main h2 {
+    font-size: 30px;
+  }
+  main div.next ul {
+    width: 330px;
+    height: 500px;
+  }
+  main div.next ul li {
+    width: 330px;
+    float: none;
+    margin-top: 20px;
+  }
+  main div.next ul li img {
+    width: 330px;
+  }
+  main div.next ul li div.img-overlay {
+    width: 330px;
+    height: 374px;
+  }
+  main div.next ul li div.img-overlay p {
+    margin-top: 170px;
+  }
+  footer {
+    width: 100%;
+    height: 1100px;
+  }
+  footer div.top {
+    height: 1100px;
+  }
+  footer div.top ul.box li.box {
+    float: none;
+    width: 330px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 364px) {
+  header {
+    width: 96%;
+    height: 134px;
+  }
+  header .top div {
+    display: none;
+  }
+  header .top ul {
+    margin: 0 auto;
+    float: none;
+    width: 212px;
+  }
+  header .bottom {
+    top: 19px;
+  }
+  header .bottom img {
+    left: 5%;
+  }
+  header .bottom ul.left {
+    display: none;
+  }
+  header .bottom ul.right {
+    display: none;
+  }
+  header .bottom div.select {
+    display: block;
+    margin-top: 15px;
+  }
+  header .bottom div.select ul {
+    margin-left: -38px;
+    margin-top: 10px;
+  }
+  main {
+    width: 92%;
+    height: 2500px;
+  }
+  main h2 {
+    font-size: 20px;
+  }
+  main div.next ul {
+    width: 100%;
+    height: 500px;
+  }
+  main div.next ul li {
+    width: 100%;
+    float: none;
+    margin-top: 20px;
+  }
+  main div.next ul li img {
+    width: 100%;
+  }
+  main div.next ul li div.img-overlay {
+    width: 0;
+    height: 0;
+  }
+  main div.next ul li div.img-overlay p {
+    display: none;
+  }
+  footer {
+    width: 100%;
+    height: 1300px;
+  }
+  footer div.top {
+    height: 1300px;
+  }
+  footer div.top ul.box li.box {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

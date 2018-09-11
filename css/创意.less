@@ -1,0 +1,120 @@
+@charset utf-8;
+
+*{margin:0;padding: 0;}
+ul{list-style:none;}
+a{text-decoration:none;}
+
+body{width:100%;background:#A0ACA1 url(../images/bg.png);}
+header{width:1000px;margin:20px auto 0px auto;
+		.top{
+			width:98%;height:50px;margin:auto;
+			ul{float:left;width:300px;height:50px;
+				li{float:left;margin:10px 5px;width:32px;height:32px;overflow:hidden;
+					img{transition:all 0.1s linear;}			
+					&:hover{
+						img{margin-top:-32px;}
+					}
+				}
+			}
+			div{float:right;margin-top:10px;
+				input{width:80px;height:33px;background:#E5D3B7;border:0;font-size:14px;color:757575;}
+				img{float:right;}
+			}
+			&::after{content:"";clear:both;display:block;
+			}
+		}
+		.bottom{
+			width:100%;height:65px;background:url(../images/nav.png) no-repeat 0 ~'5px/100%' 60px;position:relative;
+			div.select{width:40px;height:32px;background:#694E41;float:right;border-radius:5px;margin:20px;display:none;
+				border:1px solid #EFE3CA;
+				p{width:30px;height:3px;background:#F8A835;margin:4px 5px;}
+				ul{width:100px;height:200px;background:#694E41;margin-left:-28px;border-radius:8px;display:none;
+					li{padding:6px 5px;text-align:center;
+						a{color: #EDDBC1;}	
+						&:hover{a{color:#F8A835}}
+					}
+				}
+			}
+			img{display:block;;position:absolute;left:42%;top:-23px;}
+			ul.left{display:-webkit-flex;width:40%;height:65px;position:absolute;left:10px;
+				li{flex-grow:1;width:33%;height:65px;text-align:center;line-height:68px;
+					a{font-size:23px;color:#EDDBC1;display:block;
+						&:hover{color:#F8A835}}	
+				}
+			}
+			ul.right{display:-webkit-flex;width:40%;height:65px;position:absolute;right:20px;
+				li{flex-grow:1;width:33%;height:65px;text-align:center;line-height:68px;
+					a{font-size:23px;color:#EDDBC1;display:block;
+						&:hover{color:#F8A835}}	
+				}
+			}
+
+		}		
+	}
+main{width:980px;background:#F0e4cb url(../images/fg.png);margin:0 auto;
+		div.first{width:100%;padding-top:40px;
+			ul.img{
+				li{display:none;
+					&:nth-child(1){display:block}
+					img{display:block;width:100%;                                                              }
+				}
+			}
+			ul.dot{width:100px;height:22px;margin:20px auto;
+				li{margin-left:10px;width:19px;height:22px;border-radius:30px;float:left;overflow:hidden;
+				img{transition:all 0.2s linear;}
+				}
+			}
+		}
+		h2{font-size:61px;color:#694E41;font-weight:lighter;text-align:center;line-height:80px;position:relative;}
+		img.wai{width:96%;padding:0 2%;}
+		div.next{width:100%;height:750px;
+			ul{margin:0 auto;width:96%;
+				li{width:31.2%;float:left;margin:0 1%;
+					img{
+						width:100%;
+					}
+					div.img-overlay{width:295px;float:left;height:333px;background:rgba(105, 78, 65,0.8);position:absolute;display:none;
+						p{width:100px;height:34px;background:url(../images/img-overlay.png) top right ;margin:150px auto;line-height:34px;}	
+					}
+					h3{font-size:35px;color:#694E41;font-weight:lighter;}
+					a{color:#BE832F;
+						&:hover{text-decoration:underline;}
+					}
+					div.text{border-top:2px solid #694E41;width:100%;margin-top:10px;line-height:30px;color:#694E41}
+					div.button{width:120px;height:30px;background:url(../images/button.png) no-repeat top right;text-align:center;line-height:30px;
+						a{color:#7F5C3F}
+					}
+				}
+			}
+		}
+	}
+footer{
+	height:360px;width:1028px;margin:0 auto;position:relative;
+	div.fold{width:100%;position:absolute;top:-33px;
+		img.left{float:left;}
+		img.right{float:right;}
+	}
+	div.top{width:100%;height:360px;background:#F8A835 url(../images/widgets-bg.png);
+		ul.box{width:96%;margin:0 auto;
+			//只是取ul的子元素li
+			li.box{width:22%;float:left;margin-left:1%;
+				h2{font-size:23px;color:#694E41;font-weight:lighter;line-height:80px;text-align:center;}
+				p{color:#694e41;;font-size:14px;line-height:26px;}
+				a{color:#7E3141;border-bottom:1px dashed #7E3141;font-size:14px;
+					&:hover{color:#7E7171;}
+				}
+				ul{
+					li{margin-bottom:25px;
+						img{float:left;margin:5px 10px 0 0;}
+					}
+				}
+			}
+			
+		}
+	}
+	div.footer{width:96%;height:50px;background: #694e41 url(../images/footer-bg.png) repeat-x;margin:0 auto;text-align:center;line-height:50px;
+		p{color:#F8A835;;font-size:14px;height:50px;}
+	}
+}
+
+@import "bj.less";
